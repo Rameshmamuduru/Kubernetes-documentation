@@ -42,7 +42,7 @@ Now your eksctl,kubectl and aws cli setup has been done
 
 # Create a EKS cluster by running the below commands.
 ```
-eksctl create cluster --name demo-cluster --region ap-south-1 --node-type t2.medium  --zones ap-south-1a,ap-south-1b
+eksctl create cluster --name demo-cluster --region us-east-1 --node-type t2.medium  --zones us-east-1a,us-east-1b
 ```
 
 
