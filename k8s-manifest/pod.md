@@ -80,6 +80,24 @@ kubectl expose pod nginx-yaml-pod \
 kubectl get svc
 ```
 
+# what are all the limitation on POD:
+
+Exposing Pods using NodePort has limitations such as limited port range, lack of high availability, security risks, no TLS or domain routing, and poor scalability. Therefore, Pods are not exposed directly in production; Deployments with Services and Ingress are used instead.
+
+# summary Table:
+```
+| Limitation         | Why it matters          |
+| ------------------ | ----------------------- |
+| Pod is ephemeral   | Causes downtime         |
+| Limited ports      | Scalability issue       |
+| No HA              | Single point of failure |
+| No TLS             | Security risk           |
+| No domains         | Poor UX                 |
+| Open ports         | Security exposure       |
+| No rolling updates | App downtime            |
+```
+
+
 
 
 
