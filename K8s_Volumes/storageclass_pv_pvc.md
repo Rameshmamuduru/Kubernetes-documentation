@@ -15,7 +15,7 @@
 - IAM permissions for nodes to create cloud volumes
 - Example: AWS worker nodes need ec2:CreateVolume, ec2:AttachVolume, etc.
 
-# Installtion of AWS CLI DRIVER Install:
+# Installtion of AWS CLI DRIVER:
 
 - Associate OIDC Driver
 ```
