@@ -95,3 +95,10 @@ kubectl apply -f pod.yaml
 kubectl get pod
 kubectl describe pod nginx-dynamic-pod
 ```
+
+# Final Flow:
+- Driver installed → lets Kubernetes create cloud storage automatically
+- StorageClass → defines driver + parameters + reclaim policy
+- PVC → requests storage from StorageClass
+- Pod → mounts PVC
+- Result → storage created dynamically in cloud, mounted to Pod
