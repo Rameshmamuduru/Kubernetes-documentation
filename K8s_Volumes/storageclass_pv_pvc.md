@@ -15,6 +15,35 @@
 - IAM permissions for nodes to create cloud volumes
 - Example: AWS worker nodes need ec2:CreateVolume, ec2:AttachVolume, etc.
 
+# Installtion of AWS CLI DRIVER Install:
+
+- Associate OIDC Driver
+```
+eksctl utils associate-iam-oidc-provider \
+  --cluster demo-cluster \
+  --region ap-south-1 \
+  --approve
+```
+required for IRSA
+
+- Create IAM policy:
+```
+eksctl create iamserviceaccount \
+  --name ebs-csi-controller-sa \
+  --namespace kube-system \
+  --cluster demo-cluster \
+  --region ap-south-1 \
+  --attach-policy-arn arn:aws:iam::aws:policy/service-role/AmazonEBSCSIDriverPolicy \
+  --approve \
+  --role-name AmazonEKS_EBS_CSI_DriverRole
+```
+- Verify Installation:
+```
+kubectl get pods -n kube-system | grep ebs
+```
+
+
+
 
 # Demo:
 
