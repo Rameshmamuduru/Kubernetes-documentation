@@ -342,17 +342,3 @@ Service (ClusterIP)
    ↓
 Pod
 ```
-
----
-
-## 🎯 Interview-ready statement
-
-> In EKS, HTTPS is handled at the Ingress Controller. We use cert-manager with a ClusterIssuer (Let’s Encrypt) to automatically issue and renew certificates. The ELB routes HTTPS traffic to NGINX, which terminates TLS and forwards requests to services.
-
----
-
-If you want, I can create a **full working YAML demo for EKS** with:
-
-* Deployment + Service + Ingress + cert-manager TLS → ready to copy & apply.
-
-Do you want me to do that next?
