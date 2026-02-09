@@ -1,13 +1,3 @@
-Perfect — now you’re thinking like a DevOps engineer building a **full stack skillset** 👍
-
-I’ll give you the **same style END-TO-END ROADMAP for Kubernetes** — from zero → production → interview-ready.
-
-Not random topics.
-A **real industry roadmap**.
-
-Save this.
-
----
 
 # 🛣️ COMPLETE KUBERNETES ROADMAP (End-to-End)
 
